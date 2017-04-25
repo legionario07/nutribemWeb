@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Emporio NutriBem</title>
+	<h:outputStylesheet library="css" name="stylo.css" />
+	
+</h:head>
+
+<h:body>
+
+<!-- Menu Principal -->
+	<h:form id="formMenuPrincipal">
+		<p:menubar>
+			<p:submenu label="Partidas" id="menuPartida" icon="ui-icon-play">
+				<p:menuitem value="Incluir" id="subIncluir" >
+				</p:menuitem>
+				<p:menuitem value="Analitica" id="subPartidaAnalitica"
+					>
+				</p:menuitem>
+			</p:submenu>
+
+			<p:submenu label="Estátisticas" icon="ui-icon-signal"
+				id="menuEstatisticas">
+				<p:menuitem value="Saldo"  />
+				<p:menuitem value="Pontos"  />
+				<p:menuitem value="Jogador Analitico"
+					 />
+			</p:submenu>
+
+			<p:submenu icon="ui-icon-gear">
+				<p:menuitem value="Colocação"  />
+				<p:menuitem value="Jogador"  />
+				<p:menuitem value="Local"  />
+			</p:submenu>
+
+		</p:menubar>
+	</h:form>
+	<hr></hr>
+
+<!-- Fim do menu Principal -->
+
+	<ui:insert name="corpo"></ui:insert>
+</h:body>
+</html>

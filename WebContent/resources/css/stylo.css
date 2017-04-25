@@ -1,0 +1,7 @@
+@CHARSET "ISO-8859-1";
+
+
+<!--Dimunuir o tamanho da fonte-->
+.ui-widget, .ui-widget .ui-widget{
+	font-size: 12px !important;
+}
